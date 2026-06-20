@@ -1,108 +1,94 @@
-## Real Valladolid - Base de Datos en Access
-Descripcion del Proyecto
-Base de datos relacional en Microsoft Access para la gestion integral de un club de futbol profesional.
+## Real Valladolid – Sistema de Gestión de Base de Datos (Microsoft Access)
 
-Proyecto educativo para la asignatura de Aplicaciones Ofimaticas.
+Sistema de base de datos relacional diseñado en Microsoft Access para la gestión integral de la información de un club de fútbol profesional.
 
-Objetivo
-Gestionar toda la informacion de un club de futbol:
+El proyecto simula el funcionamiento interno de un departamento de gestión deportiva, centralizando datos de jugadores, equipos, competiciones y estructura organizativa del club.
 
-Jugadores (activos, lesionados, canteranos, idolos)
+🎯 Objetivo del sistema
 
-Equipos y entrenadores
+Desarrollar un modelo de base de datos capaz de gestionar de forma estructurada toda la información clave de un club de fútbol, permitiendo:
 
-Partidos y estadisticas
-
-Socios, sanciones y merchandising
-
-Viajes, eventos y patrocinadores
-
-Palmares historico y transferencias
-
-Estructura
-Tablas (17)
+Control de plantilla y персонal deportivo
+Seguimiento de lesiones, sanciones y rendimiento
+Gestión de partidos y estadísticas
+Administración de socios y actividades del club
+Registro de eventos, viajes y patrocinadores
+Historial deportivo y transferencias
+<br>
+🗂️ Modelo de datos
+📌 Entidades principales (17 tablas)
 Entrenadores
-
 Equipos
-
-Estadistica
-
 Jugadores
-
+Estadísticas
 Lesiones
-
-Merchandising
-
 Partidos
-
 Socios
-
-Viajes
-
-Palmares
-
-Patrocinadores
-
-Idolos
-
-Canteranos
-
-Eventos
-
-Premios Individuales
-
 Sanciones
-
+Merchandising
+Viajes
+Patrocinadores
+Eventos
+Palmarés
+Ídolos históricos
+Canteranos
+Premios individuales
 Transferencias
+<br><br>
+🔗 Relaciones del sistema
+El modelo relacional está diseñado con integridad referencial completa, garantizando coherencia entre entidades.
 
-Relaciones (16)
-Todas con integridad referencial.
+Ejemplos de relaciones:
 
-Equipos -> Jugadores (1:N)
+Equipos → Jugadores (1:N)
+Equipos → Entrenadores (1:N)
+Equipos → Partidos (1:N)
+Jugadores → Lesiones (1:N)
+Jugadores → Transferencias (1:N)
+Partidos → Estadísticas (1:N)
+Socios → Sanciones (1:N)
+<br><br>
+📊 Consultas implementadas
 
-Equipos -> Entrenadores (1:N)
+El sistema incluye consultas para análisis y gestión de información:
 
-Equipos -> Partidos (1:N)
+Plantilla de jugadores activos
+Jugadores por posición (delanteros, etc.)
+Jugadores lesionados o sin imagen
+Socios con sanciones activas
+Partidos disputados en casa
+Entrenadores con contrato vigente
+Canteranos con debut en primer equipo
+Jugadores veteranos
+Filtrado por nacionalidad
+<br><br>
+🧩 Interfaz del sistema
+Formularios interactivos para gestión de datos
+Navegación estructurada entre entidades
+Uso de cuadros combinados para optimizar la selección de registros
+Diseño orientado a facilitar la administración de información compleja
+<br><br>
+🛠️ Tecnologías utilizadas
+Microsoft Access (modelo relacional)
+SQL (consultas estructuradas)
+Microsoft Word (documentación técnica del modelo)
 
-Jugadores -> Lesiones (1:N)
-
-Jugadores -> Transferencias (1:N)
-
-Socios -> Sanciones (1:N)
-
-Partidos -> Estadistica (1:N)
-
-Formularios
-Todos incluyen cuadros combinados para facilitar la seleccion de datos.
-
-Consultas (12)
-Jugadores Activos
-
-Jugadores Delanteros
-
-Jugadores Sin Fotos
-
-Jugadores con Lesion Activa
-
-Socios con Sanciones
-
-Partidos en Casa (1er Equipo)
-
-Entrenadores con Contrato Vigente
-
-Canteranos con Debut
-
-Jugadores Veteranos
-
-Jugadores por Nacionalidad
-
-Tecnologias
-Microsoft Access
-
-SQL
-
-Microsoft Word
-
-Contexto Educativo
-Asignatura: Aplicaciones Ofimaticas
+<br><br>
+🎓 Contexto académico
+Asignatura: Aplicaciones Ofimáticas
 Curso: 1º SMR
+Proyecto de diseño y modelado de base de datos relacional
+
+<br><br>
+💡 Enfoque del proyecto
+Este proyecto simula un sistema real de gestión interna de un club deportivo, aplicando conceptos de:
+
+Modelado entidad-relación
+Normalización de bases de datos
+Integridad referencial
+Diseño de consultas y formularios
+Gestión estructurada de información
+<br><br>
+
+👨‍💻 Autor
+Desarrollado por Hugo Arco 
