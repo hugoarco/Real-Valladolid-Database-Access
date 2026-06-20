@@ -1,4 +1,4 @@
-<h2 aling = "center" >Real Valladolid – Sistema de Gestión de Base de Datos (Microsoft Access)</h2> 
+<h1 align ="center" >Real Valladolid – Sistema de Gestión de Base de Datos (Microsoft Access)</h1> 
 
 Sistema de base de datos relacional diseñado en Microsoft Access para la gestión integral de la información de un club de fútbol profesional.
 
